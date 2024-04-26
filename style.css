@@ -26,7 +26,7 @@ body{
 }
 #resultDisplay{
    margin:10px auto;
-    width:50rem;
+   /* width:50rem;*/
     text-align: center;
 }
 .meanings p{
@@ -37,5 +37,8 @@ body{
 }
 .meanings div{
     text-wrap: wrap;
-    width:50vw;
+    /*width:50vw;*/
+}
+audio{
+    width:100px;
 }

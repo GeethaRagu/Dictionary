@@ -40,24 +40,31 @@
       crossorigin="anonymous"
     ></script>
     <div class="container">
-      <h1>Dictionary</h1>
-      <div class="inputField">
-        <input
-          type="text"
-          id="wordInput"
-          name="wordInput"
-          placeholder="Enter the word"
-        />
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
+          <h1>Dictionary</h1>
+          <div class="inputField">
+            <input
+              type="text"
+              id="wordInput"
+              name="wordInput"
+              placeholder="Enter the word"
+            />
 
-        <button type="button" id="submitWord">
-          <i class="ri-search-2-line"></i>
-        </button>
-      </div>
+            <button type="button" id="submitWord">
+              <i class="ri-search-2-line"></i>
+            </button>
+          </div>
 
-      <div id="resultDisplay">
-        <div class="accordion accordion-flush" id="accordionFlushExample"></div>
+          <div id="resultDisplay">
+            <div
+              class="accordion accordion-flush"
+              id="accordionFlushExample"
+            ></div>
+          </div>
+        </div>
       </div>
     </div>
-    <script src="script.js" ></script>
+    <script src="script.js"></script>
   </body>
 </html>
