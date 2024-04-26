@@ -20,14 +20,14 @@ submitWord.addEventListener("click", () => {
   accordion.innerHTML = "";
   resultArea.setAttribute("style","border:2px solid gray");
   const word = wordInput.value;
-  //console.log(word);
+  console.log(word);
   const response = fetch(
     `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
   );
   response
     .then((data) => data.json())
     .then((e) => {
-      //console.log(e);
+      console.log(e);
       for (let i = 0; i < e.length; i++) {
         const accordionItem = element("div", "accordion-item", "", "");
         const accordionHeader = element("h2", "accordion-header", "", "");
