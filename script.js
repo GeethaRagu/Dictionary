@@ -4,7 +4,7 @@ const wordInput = document.getElementById("wordInput");
 const submitWord = document.getElementById("submitWord");
 const resultArea = document.getElementById("resultDisplay");
 const accordion = document.getElementById("accordionFlushExample");
-alert("script");
+
 //function to create elements
 function element(tag, classname, id, text) {
   let tags = document.createElement(tag);
