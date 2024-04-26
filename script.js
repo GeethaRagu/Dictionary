@@ -18,7 +18,6 @@ function element(tag, classname, id, text) {
 
 submitWord.addEventListener("click", () => {
   accordion.innerHTML = "";
-  resultArea.setAttribute("style","border:2px solid gray");
   const word = wordInput.value;
   console.log(word);
   const response = fetch(
@@ -82,6 +81,7 @@ submitWord.addEventListener("click", () => {
 
         accordionBody.append(accordionBodySub);
         accordionItem.append(accordionBody);
+        resultArea.setAttribute("style","border:2px solid gray");
       }
     })
     .catch((error) => {
