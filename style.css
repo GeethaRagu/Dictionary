@@ -16,12 +16,12 @@ body{
     margin-bottom:20px;
 }
 #wordInput{
-    width:300px;
+    width:12rem;
     height:50px;
 }
 .inputField button{
     border:1px solid gray;
-    width:50px;
+    width:3rem;
     height:50px;
 }
 #resultDisplay{
