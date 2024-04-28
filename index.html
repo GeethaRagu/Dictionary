@@ -39,29 +39,38 @@
       integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
       crossorigin="anonymous"
     ></script>
-    <div class="container">
+    <header class="container-fluid">
+      <span
+        ><img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7ZDZTew5dvDQtTY7f7FwOV4SYwmpM9udxHQ&s"
+      /></span>
+      <span><strong class="mt-2">Dictionary</strong></span>
+    </header>
+    <div class="container selection-box mt-5 mb-3 pt-3 pb-5">
       <div class="row">
-        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-6">
-          <h1>Dictionary</h1>
+        <div class="col">
           <div class="inputField">
+            <label for="wordInput">Enter the word</label>
             <input
               type="text"
               id="wordInput"
               name="wordInput"
-              placeholder="Enter the word"
+              placeholder="Your input here..."
             />
-
             <button type="button" id="submitWord">
               <i class="ri-search-2-line"></i>
             </button>
           </div>
-
-          <div id="resultDisplay">
-            <div
-              class="accordion accordion-flush"
-              id="accordionFlushExample"
-            ></div>
-          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container" id="resultDisplay">
+      <div class="row mt-3 mb-3">
+        <div class="col">
+          <div
+            class="accordion accordion-flush"
+            id="accordionFlushExample"
+          ></div>
         </div>
       </div>
     </div>

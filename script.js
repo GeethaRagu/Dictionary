@@ -83,6 +83,8 @@ submitWord.addEventListener("click", () => {
         accordionItem.append(accordionBody);
         resultArea.setAttribute("style","border:2px solid gray");
       }
+      
+      resultArea.setAttribute("style","visibility:visible"); //show details container only after data are fetched
     })
     .catch((error) => {
       //console.log(error);
