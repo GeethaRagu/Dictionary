@@ -21,14 +21,14 @@ submitWord.addEventListener("click", () => {
   const word = wordInput.value;
   //console.log(word);
   const response = fetch(
-    `https://api.dictionaryapi.dev/api/v2/entries/en/${word}`
+    `https://api.dictionaryapi.dev/api/v2/entries/en/${word}` //input word is sent as parameter to api
   );
   response
     .then((data) => data.json())
     .then((e) => {
      // console.log(e);
       for (let i = 0; i < e.length; i++) {
-        const accordionItem = element("div", "accordion-item", "", "");
+        const accordionItem = element("div", "accordion-item", "", ""); //create accordion item
         const accordionHeader = element("h2", "accordion-header", "", "");
         const accordionButton = element("button", " ", "", "");
         accordionButton.classList.add("accordion-button", "collapsed");
@@ -70,7 +70,7 @@ submitWord.addEventListener("click", () => {
 
           const defTitle = element("h5", "", "", "");
           defTitle.innerHTML = `Definitions of ${e[i].word}:`;
-          const uList = element("ul", "list-group", "", "");
+          const uList = element("ul", "list-group", "", "");  //display definitions in list
           for (let l = 0; l < e[i].meanings[k].definitions.length; l++) {
             const definitions = element("li", "list-group-item", "", "");
             definitions.innerHTML = `${e[i].meanings[k].definitions[l].definition}`;
@@ -81,8 +81,7 @@ submitWord.addEventListener("click", () => {
 
         accordionBody.append(accordionBodySub);
         accordionItem.append(accordionBody);
-        resultArea.setAttribute("style","border:2px solid gray");
-      }
+       }
       
       resultArea.setAttribute("style","visibility:visible"); //show details container only after data are fetched
     })
